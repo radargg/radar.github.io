@@ -1,4 +1,11 @@
 
+<video autoplay="" loop="" id="player">
+<source src="sweg.mp4" type="video/mp4">
+<script>
+var video = document.currentScript.parentElement;
+video.volume = 0.5;
+</script>
+</video>
 <html>
 	<head>
 	
@@ -43,14 +50,6 @@
 		    <h2>Discord: Prime#6666</h2>		    
 		</div>
 		<!-- end of members -->
-			
-			<video autoplay="" loop="" id="player">
-<source src="sweg.mp4" type="video/mp4">
-<script>
-var video = document.currentScript.parentElement;
-video.volume = 0.5;
-</script>
-</video>
 		
 	</div><input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
 
