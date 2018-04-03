@@ -1,0 +1,55 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<!-- icon -->
+	<link href="favicon.png" rel="icon" type="image/png"/>
+	<!-- scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://use.fontawesome.com/544301a847.js"></script>
+	<script src="js/title.js"></script>
+	
+	<title>the reaper</title>
+	
+</head>
+
+<body oncontextmenu="return false;">
+
+<fieldset class="center">
+
+		<div class="overbox">
+				death
+		</div>
+  
+		<div class="title">
+				todd
+		</div>
+
+		<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+		
+		<div class="subtext">
+				social media
+		</div>
+		
+		<div class="social">
+			<a href="https://steamcommunity.com/id/toddolas" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i></a>
+			<a href="https://instagram.com/toddolas" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+			<a href="https://f3m.tumblr.com" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i>
+			<a href="https://twitter.com/forgettance" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+			<a href="https://soundcloud.com/todd" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i>
+		</div>
+		
+</fieldset>
+
+<audio id="bg" preload="auto" autoplay>
+    <source id="played" src="future.mp3" type="audio/mp3" />   
+    <script>
+    var audio = document.currentScript.parentElement;
+    audio.volume = 0.2;
+    </script>    
+    </audio>  
+
+</body>
+</html>
