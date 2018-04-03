@@ -11,3 +11,31 @@ shadow {
     text-align: center;
 	text-shadow: 1px 1px 8px #000
 }
+
+rainbow {
+      animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+   @keyframes colorchange
+    {
+      0%   {COLOR: red;}
+      25%  {COLOR: yellow;}
+      50%  {COLOR: blue;}
+      75%  {COLOR: green;}
+      100% {COLOR: red;}
+	  
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {COLOR: red;}
+      25%  {COLOR: yellow;}
+      50%  {COLOR: blue;}
+      75%  {cOLOR: green;}
+      100% {COLOR: red;}
+    }
+}
