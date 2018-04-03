@@ -10,7 +10,8 @@
 
 body {
 	background-color: #101010;
-	background-size: cover;
+	background: url(background.png);
+    background-size: cover;
 	font-family: 'Raleway', sans-serif;
 }
 
