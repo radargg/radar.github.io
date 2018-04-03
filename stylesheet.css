@@ -114,7 +114,7 @@ body pre {
 	padding: 7px;
 }
 
-.todd {
+.radar {
 	text-shadow: 0 0 1px rgba(230, 0, 0, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
 	color:  #c80000;
 	font-weight: 450;
@@ -123,13 +123,13 @@ body pre {
 	padding: 2px;
 }
 
-.todd a {
+.radar a {
     text-decoration: none;
     color: #c80000;
     transition: all 1s ease-in-out;
 }
 
-.dove {
+.ream {
 	text-shadow: 0 0 1px rgba(43, 84, 171, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
 	color:  #2B54AB;
 	font-weight: 450;
@@ -138,13 +138,13 @@ body pre {
 	padding: 2px;
 }
 
-.dove a {
+.ream a {
     text-decoration: none;
     color: #2B54AB;
     transition: all 1s ease-in-out;
 }
 
-.mac {
+.skies {
 	text-shadow: 0 0 1px rgba(67, 229, 59, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
 	color:  #43E53B;
 	font-weight: 450;
@@ -153,13 +153,13 @@ body pre {
 	padding: 2px;
 }
 
-.mac a {
+.skies a {
     text-decoration: none;
     color: #43E53B;
     transition: all 1s ease-in-out;
 }
 
-.paradox {
+.euan {
 	text-shadow: 0 0 1px rgba(59, 229, 206, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
 	color:  #3BE5CE;
 	font-weight: 450;
@@ -168,33 +168,33 @@ body pre {
 	padding: 2px;
 }
 
-.paradox a {
+.euan a {
     text-decoration: none;
     color: #3BE5CE;
     transition: all 1s ease-in-out;
 }
 
-.paradox a:hover {
+.euan a:hover {
 	color: #fff;
 	transition: all 1s ease-in-out;
 }
 
-.mac a:hover {
+.skies a:hover {
 	color: #fff;
 	transition: all 1s ease-in-out;
 }
 
-.dove a:hover {
+.ream a:hover {
 	color: #fff;
 	transition: all 1s ease-in-out;
 }
 	
-.todd a:hover {
+.radar a:hover {
   color: #fff;
   transition: all 1s ease-in-out;
 }
 
-.todd
+.radar
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
