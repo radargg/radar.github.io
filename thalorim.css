@@ -12,30 +12,59 @@ shadow {
 	text-shadow: 1px 1px 8px #000
 }
 
-rainbow {
-      animation: colorchange 5s; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 5s; /* Chrome and Safari */
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-    }
+.rainbow {
+	animation: rainbow 3s infinite; 
+}
 
-   @keyframes colorchange
-    {
-      0%   {COLOR: red;}
-      25%  {COLOR: yellow;}
-      50%  {COLOR: blue;}
-      75%  {COLOR: green;}
-      100% {COLOR: red;}
-	  
-    }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
 
-    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-    {
-      0%   {COLOR: red;}
-      25%  {COLOR: yellow;}
-      50%  {COLOR: blue;}
-      75%  {cOLOR: green;}
-      100% {COLOR: red;}
-    }
+/* Standard Syntax */
+@keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
 }
