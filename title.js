@@ -16,7 +16,7 @@ function loaded() {
 
 var x = 0;
 
-var titleText = [ "E", "EG ", "EGO", "EGOT", "EGOTR", "EGOTRI", "EGOTRIP", "EGOTRI", "EGOTR", "EGOT", "EGO", "EG" ];
+var titleText = [ "E", "EG ", "EGO", "EGOR", "EGORA", "EGORAD", "EGORADA", "EGORADAR", "EGORADA", "EGORAD", "EGORA", "EGOR", "EGO", "EG" ];
 
 function loop() {
 
