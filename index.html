@@ -25,24 +25,80 @@
 		
 		<!-- title bro -->
 		<div class="title">
-			<h1>radar</h1>
-			<h3>An average gamer.</h3>
+			<h1>Radar</h1>
+			
 		</div>
+<div id="center">
+		
+		<div class="animated fadeIn">
+      <pre><center><span class="rainbow">s/o to:</span></center></pre>
+        <pre>/<div id="marquee"><div style="width: 100000px; margin-left: 0px; animation: marqueeAnimation-62342130 12.3667s linear 0s infinite;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 310px; float: left;"><a href="http://steamcommunity.com/id/reamrust" target="_blank">ream</a> - <a href="http://steamcommunity.com/id/radarfps" target="_blank">radar</a> - <a href="http://steamcommunity.com/id/euanbtw" target="_blank">euan</a> - <a href="http://steamcommunity.com/id/sIept" target="_blank">skies</a> - <a href="http://steamcommunity.com/id/aprilbtw" target="_blank">april</a> - <a href="https://www.xboxgamertag.com/search/Cammy003/" target="_blank">cammy</a> - <a href="https://www.xboxgamertag.com/search/Meinoo" target="_blank">meinoo</a> - <a href="https://www.xboxgamertag.com/search/Buttttons" target="_blank">butttons</a></div><div class="js-marquee" style="margin-right: 310px; float: left;"><a href="http://steamcommunity.com/id/reamrust" target="_blank">ream</a> - <a href="http://steamcommunity.com/id/radarfps" target="_blank">radar</a> - <a href="http://steamcommunity.com/id/euanbtw" target="_blank">euan</a> - <a href="http://steamcommunity.com/id/sIept" target="_blank">skies</a> - <a href="http://steamcommunity.com/id/aprilbtw" target="_blank">april</a> - <a href="https://www.xboxgamertag.com/search/Cammy003/" target="_blank">cammy</a> - <a href="https://www.xboxgamertag.com/search/Meinoo" target="_blank">meinoo</a> - <a href="https://www.xboxgamertag.com/search/Buttttons" target="_blank">butttons</a></div><style>@-webkit-keyframes marqueeAnimation-62342130  { 100%  {margin-left:-760px}}</style></div></div>/</pre>
+		</div>
+		<div class="animated fadeInUp">
+		
+		
+		<!--- cursor --->
+		
+		
+	<style>
+		.clockStyle {
+		font-family: monospace;
+		font-size: 10px;
+		}
+	</style>
+	
+		<center></center>
+		<script>
+			function renderTime() {
+			var currentTime = new Date();
+			var diem = "am";
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			setTimeout('renderTime()',1000);
+			if (h == 0) {
+				h = 12;
+			} else if (h > 12) { 
+				h = h - 12;
+				diem="pm";
+			}
+			if (h < 10) {
+				h = "0" + h;
+			}
+			if (m < 10) {
+				m = "0" + m;
+			}
+			if (s < 10) {
+				s = "0" + s;
+			}
+			var myClock = document.getElementById('clockDisplay');
+			myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+			myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+			}
+			renderTime();
+		</script>
+		
+		<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
+		
+		</div>																						
+        </div>
+<br><br><br><div class="social">
+			<a href="https://steamcommunity.com/id/toddolas" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-steam" aria-hidden="true" style="
+    color: #666666;
+"></i></a>
+			<a href="https://instagram.com/toddolas" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="
+    color: #406e94;
+"></i>
+			</a><a href="https://twitter.com/forgettance" class="icon" style="text-decoration:none;" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="
+    color: #55acee;
+"></i>
+			</a></div>
 		<!-- end of title -->
 		
 		<!-- members body -->
-		<div class="more">
-			<div class="user"><i class="fas fa-user-secret"></i></div>
-				<div class="radar"><a href="https://steamcommunity.com/id/radarfps" target="_blank">Radar</a></div>
-				<div class="ream"><a href="https://steamcommunity.com/id/reamrust" target="_blank">Ream</a></div>
-			        <div class="skies"><a href="https://steamcommunity.com/id/slept" target="_blank">skies</a></div>
-				<div class="euan"><a href="https://steamcommunity.com/id/euanbtw" target="_blank">euan<a/></div>
-				<div class="euan"><a href="https://steamcommunity.com/id/crexd" target="_blank">crexd</a></div>
-		</div>
 		
-		<div class="price">
-		    <h2>Discord: Prime#6666</h2>		    
-		</div>
+		
+		
 		<!-- end of members -->
 		
 <audio id="bg" preload="auto" autoplay="">
@@ -54,6 +110,8 @@
     </audio>  
 		
 	</div>
+
+
 
 
 </body>
