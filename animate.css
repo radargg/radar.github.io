@@ -1,5 +1,62 @@
 @charset "UTF-8";
 
+.rainbow {
+	animation: rainbow 3s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
+
+/* Standard Syntax */
+@keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
