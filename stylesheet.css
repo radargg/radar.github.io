@@ -1,108 +1,249 @@
-@font-face {
-    font-family: 'XOXOGlow';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/XOXOGlowRegular.otf');
-    src: url('fonts/XOXOGlowRegular.ttf') format('truetype');
-    -webkit-font-smoothing: aliased;
-    font-smooth: never;
-}
-
-@font-face {
-	font-family: 'Zipper';
-	font-style: normal;
-    font-weight: 400;
-    src: url('fonts/Zipper-Regular.otf');
-    src: url('fonts/Zipper-Regular.ttf') format('truetype');
-    -webkit-font-smoothing: aliased;
-    font-smooth: never;
-}
-
+/* thanks skeet gamesense xD for the font + title idea */
 * {
-	user-select: none;
+  outline: none !important;
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
 }
 
 body {
-	background: url('background.png');
+	background-color: #101010;
 	background-size: cover;
+	font-family: 'Raleway', sans-serif;
 }
 
-fieldset {
-    height:450px;
-    width:680px;
-    border:4px solid darkred;
-    box-shadow: 0 0 25px red;
-    border-radius: 7px;
-	text-decoration: none;
-	background: rgba(0, 0, 0, 0.6);
-}
-
-legend {
+.container {
   text-align: center;
-  background: transparent;
-  font-family: 'XOXOGlow', sans-serif;
-  color: black;
-  font-size: 62px;
-  text-shadow: 0 0 25px red;
-
+  background-color: #222;
+  opacity: 1;
+  width: 420px;
+  height: 420px;
+  overflow: hidden;
+  position: absolute;
+  border: 3px solid #3a3a3a;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  border-radius: 25px;
+  -webkit-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.overbox {
-	margin-top: -80px;
-	text-align: center;
-	background: transparent;
-	font-family: 'XOXOGlow', sans-serif;
-	color: white;
-	font-size: 62px;
-	text-shadow: 0 0 25px red;
-	z-index: 999;
+body pre {
+	animation: rainbow 3s infinite;
 }
+
 .title {
-	font-family: 'Zipper', sans-serif;
-	color: white;
-	text-shadow: 0 0 25px red;
-	font-size: 48px;
-	margin-top: -40px;
-	text-align: center;
-}
- 
-.subtext {
-	font-family: 'Zipper', sans-serif;
-	color: white;
-	text-shadow: 0 0 25px red;
-	font-size: 36px;
-	margin-top: 45px;
-	text-align: center;
+	margin-top: 25px;
 }
 
-.social {
-	margin-top: 55px;
+.title h1 {
 	text-align: center;
-	font-size: 32px;
-	padding: 5px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 62pt;
+    font-weight: normal;
+	height: 120px;
+	animation: rainbow 3s infinite; 
 }
- 
- .center {
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);    
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+
+.title h2 {
+	margin-top: -38px;
+    margin-left: 200px;
+    padding: 0;
+    text-align: center;
+    font-size: 9pt;
+	animation: rainbow 3s infinite; 
+}
+
+.title h3 {
+	font-size: 16px;
+	padding: 5px;
+	color: #fff;
+}
+
+.more {
+	position: relative;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.price {
+    position: relative;
+    padding: 3px;
+    animation: rainbow 3s infinite;
+}
+
+.price h1 {
+    color: #fff;
+    font-size: 12pt;
+}
+
+.price h2 {
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Mina', sans-serif;
+
+}
+
+.user i {
+	font-size: 36px;
+	color: #fff;
+	padding: 7px;
+}
+
+.todd {
+	text-shadow: 0 0 1px rgba(230, 0, 0, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
+	color:  #c80000;
+	font-weight: 450;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+	padding: 2px;
+}
+
+.todd a {
+    text-decoration: none;
+    color: #c80000;
+    transition: all 1s ease-in-out;
+}
+
+.dove {
+	text-shadow: 0 0 1px rgba(43, 84, 171, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
+	color:  #2B54AB;
+	font-weight: 450;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+	padding: 2px;
+}
+
+.dove a {
+    text-decoration: none;
+    color: #2B54AB;
+    transition: all 1s ease-in-out;
+}
+
+.mac {
+	text-shadow: 0 0 1px rgba(67, 229, 59, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
+	color:  #43E53B;
+	font-weight: 450;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+	padding: 2px;
+}
+
+.mac a {
+    text-decoration: none;
+    color: #43E53B;
+    transition: all 1s ease-in-out;
+}
+
+.paradox {
+	text-shadow: 0 0 1px rgba(59, 229, 206, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
+	color:  #3BE5CE;
+	font-weight: 450;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+	padding: 2px;
+}
+
+.paradox a {
+    text-decoration: none;
+    color: #3BE5CE;
+    transition: all 1s ease-in-out;
+}
+
+.paradox a:hover {
+	color: #fff;
+	transition: all 1s ease-in-out;
+}
+
+.mac a:hover {
+	color: #fff;
+	transition: all 1s ease-in-out;
+}
+
+.dove a:hover {
+	color: #fff;
+	transition: all 1s ease-in-out;
+}
+	
+.todd a:hover {
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+
+.todd
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
+}
+
+/* Standard Syntax */
+@keyframes rainbow{
+	7%{color: red;}
+	14%{color: orange;}
+	21%{color: yellow;}
+	28%{color: green;}
+	35%{color: blue;}
+	42%{color: indigo;}
+	49%{color: violet;}
+	56%{color: violet;}
+	63%{color: indigo;}
+	70%{color: blue;}
+	77%{color: green;}
+	84%{color: yellow;}
+	91%{color: orange;}
+	98%{color: red;}
 }
 
 /* Volume Slider */
 input[type=range] {
   height: 5px;
   -webkit-appearance: none;
+     -moz-appearance: none;
   margin: 0.5% 0;
-  width: 46%;
+  width: 65%;
   background: none;
   border: none;
-  position: fixed;
-  left: 26%;
+  position: absolute;
+  left: 18%;
   }
 input[type=range]:focus {
   outline: none;
@@ -112,163 +253,77 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 7px;
   cursor: pointer;
   animate: 0.2s;
-  box-shadow: 0px 0px 25px #6f0000;
-  background: #ff3434;
+  box-shadow: 0 0 25px #800020;
+  background: #990026;
   border-radius: 14px;
-  border: 0px solid #000000;
+  border: 0 solid #000000;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 10px #FFFFFF;
-  border: 0px solid #000000;
+  box-shadow: 0 0 10px #000000;
+  border: 0 solid #000000;
   height: 7px;
   width: 15px;
   border-radius: 14px;
-  background: #FFFFFF;
+  background: #000000;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: 0px;
+     -moz-appearance: none;
+  margin-top: 0;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ff3434;
+  background: #990026;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 7px;
   cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 25px #6f0000;
-  background: #ff3434;
+  box-shadow: 0 0 25px #800020;
+  background: #990026;
   border-radius: 14px;
-  border: 0px solid #000000;
+  border: 0 solid #000000;
 }
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 10px #FFFFFF;
-  border: 0px solid #000000;
+  box-shadow: 0 0 10px #000000;
+  border: 0 solid #000000;
   height: 7px;
   width: 15px;
   border-radius: 14px;
-  background: #FFFFFF;
+  background: #000000;
   cursor: pointer;
 }
 input[type=range]::-ms-track {
   width: 100%;
   height: 7px;
   cursor: pointer;
-  animate: 0.2s;
   background: transparent;
   border-color: transparent;
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background: #ff3434;
-  border: 0px solid #000000;
+  background: #990026;
+  border: 0 solid #000000;
   border-radius: 28px;
-  box-shadow: 0px 0px 10px #6f0000;
+  box-shadow: 0 0 10px #800020;
 }
 input[type=range]::-ms-fill-upper {
-  background: #ff3434;
-  border: 0px solid #000000;
+  background: #990026;
+  border: 0 solid #000000;
   border-radius: 28px;
-  box-shadow: 0px 0px 10px #6f0000;
+  box-shadow: 0 0 10px #800020;
 }
 input[type=range]::-ms-thumb {
   margin-top: 1px;
-  box-shadow: 0px 0px 10px #FFFFFF;
-  border: 0px solid #000000;
+  box-shadow: 0 0 10px #000000;
+  border: 0 solid #000000;
   height: 7px;
   width: 15px;
   border-radius: 14px;
-  background: #FFFFFF;
+  background: #000000;
   cursor: pointer;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: #663399;
+  background: #990026;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #663399;
-}
-
-/* thanks mystie and whoever else */
-/* FontAwesome shit */
-.icon a:hover {
-   color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon {
-	color: darkred;
-	text-shadow: 1px 1px 8px #000;
-	padding: 15px;
-}
-.icon .fa-instagram {
-  color: white;
-}
-/* ff69b4 */
-.icon .fa-instagram:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon .fa-soundcloud {
-  color: white;
-}
-.icon .fa-soundcloud:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon .fa-steam {
-  color: white;
-}
-.icon .fa-steam:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon .fa-tumblr {
-  color: white;
-}
-.icon .fa-tumblr:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon .fa-twitter {
-  color: white;
-}
-.icon .fa-twitter:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon .fa-twitch {
-  color: white;
-}
-.icon .fa-twitch:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-.icon .fa-youtube-play {
-  color: white;
-}
-.icon .fa-youtube-play:hover {
-  color: #990000;
-   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
-}
-
-a:hover {
-	color: #990000;
-	   transition: color 0.3s linear;
-   -webkit-transition: color 0.3s linear;
-   -moz-transition: color 0.3s linear;
+  background: #990026;
 }
